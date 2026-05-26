@@ -63,7 +63,7 @@ header{
     margin: 1rem auto 0 auto;
     max-width: 50rem;
     text-align: justify;
-    line-height: 1,6;
+    line-height: 1.6;
     border-bottom: 1px solid var(--bordas);
 }
 
@@ -165,7 +165,7 @@ footer p{
         display: flex;
         flex-direction: column ;
     }
-    header .apresentacao #lado-direito main footer{
+    header, .apresentacao, #lado-direito, main, footer{
         grid-row: auto !important;
         grid-column: auto !important;
     }
