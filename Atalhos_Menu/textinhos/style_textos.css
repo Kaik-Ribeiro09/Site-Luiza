@@ -68,6 +68,14 @@ main{
     border-left: 4px solid #cfb53b;
     
 }
+.datas{
+    font-size: 10px;
+    border: solid 1px var(--bordas);
+    float:none;
+}
+.titulo-card{
+    border-bottom: 1px solid var(--bordas);
+}
 .nos{
     border-radius: 50%;
     border: 2px solid  var(--ouro-velho);
