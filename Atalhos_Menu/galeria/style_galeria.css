@@ -121,6 +121,13 @@ footer p{
         gap: 20px;
         padding: 10px 40px;
     }
+    #atalhos{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-right: 0;
+        padding: 0;
+    }
     .grid-fotos{
         flex-direction: column;
         align-items: center;
