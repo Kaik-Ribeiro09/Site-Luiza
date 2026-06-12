@@ -7,8 +7,8 @@
 }
 body{
     display: grid;
-    grid-template-columns: 1fr 25%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     background: linear-gradient(#4a0e0e, #2b0505) no-repeat ;
     background-attachment: fixed;
     min-height: 100vh;
@@ -19,7 +19,7 @@ body{
 }
 h1, h2, h3{
     color: var(--ouro-velho);
-    font-weight: 600;
+    font-weight: bold;
 }
 h1{
     font-size: 35px;
@@ -27,7 +27,7 @@ h1{
 a{
     color: var(--ouro-velho);
     text-decoration: none;
-    transition: color 0.3 ease, text-shadow 0.3 ease, transform 0.2 ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
 }
 a:hover{
     color: var(--branco);
@@ -35,7 +35,7 @@ a:hover{
 }
 /*Header*/
 header{
-    grid-column: 1/3;
+    grid-column: 1/2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,29 +49,17 @@ header{
     gap: 20px; 
 }
 /*apresentação*/
-.apresentacao{
-    grid-column: 1/3;
-    text-align: center;
-    padding: 30px 40px;
-}
-#sublinhado{
-    font-size: 32px;
-    text-decoration:underline;
-}
-#texto-apresentacao{
-    font-size: 1rem;
-    margin: 1rem auto 0 auto;
-    max-width: 50rem;
-    text-align: justify;
-    line-height: 1,6;
-    border-bottom: 1px solid var(--bordas);
-}
 
 /*main*/
 main{
-    grid-column: 1/2;
+    grid-column: auto;
     padding: 20px 40px;
-    grid-row: 3/4;
+    grid-row: 2/3;
+}
+#titulo{
+    text-align: center;
+    border-bottom: 1px solid var(--bordas);
+    padding: 10px 40px;
 }
 #fotos{
     background: #310808;
@@ -103,48 +91,6 @@ main{
     margin-top: 15px;
     font-weight: 700;
 }
-
-#perfis{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;   
-}
-.card-perfil{
-    background: #480707;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #cfb53b;
-    
-}
-.nos{
-    border-radius: 50%;
-    border: 2px solid  var(--ouro-velho);
-    margin-bottom: 10px;
-    width: 120px;
-    height: 120px;
-    object-fit: cover; 
-}
-#lado-direito{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: #410202;
-    border-radius: 12px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #60270f;
-}
-#categorias{
-    list-style: none;
-    padding: 0;
-}
-#categorias li {
-    margin-bottom: 12px;
-}
-#palavra-diaria{
-    margin-top: 30px;
-    border-top: 1px dashed #60270f;
-    padding-top: 15px;
-}
 footer{
     grid-column: 1/3;
     grid-row: 4/5;
@@ -165,7 +111,7 @@ footer p{
         display: flex;
         flex-direction: column ;
     }
-    header .apresentacao #lado-direito main footer{
+    header main footer{
         grid-row: auto !important;
         grid-column: auto !important;
     }
@@ -175,20 +121,9 @@ footer p{
         gap: 20px;
         padding: 10px 40px;
     }
-    #atalhos{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-right: 0;
-        padding: 0;
-    }
     .grid-fotos{
         flex-direction: column;
         align-items: center;
-    }
-    #perfis{
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 }
 

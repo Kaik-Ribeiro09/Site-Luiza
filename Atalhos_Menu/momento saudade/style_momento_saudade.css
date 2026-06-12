@@ -99,9 +99,13 @@ main{
 .nos{
     border: 2px solid  var(--ouro-velho);
     margin-bottom: 10px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover; 
+}
+#spotify{
+    margin-top: 20px;
+    border-top: 1px solid var(--bordas);
 }
 #lado-direito{
     grid-column: 2/3;
